@@ -25,6 +25,9 @@ $padding-full: 16px;
 $padding-half: ($padding-full / 2);
 $padding-double: ($padding-full * 2);
 
+$primary-border-color: #CCC;
+$secondary-border-color: $color-ah;
+
 .page-layout__viewport {
   padding-top: 2rem;
 }
@@ -35,7 +38,7 @@ $padding-double: ($padding-full * 2);
 }
 
 #viewport {
-  height: 500px;
+  height: 350px;
   padding-top: $padding-double;
 }
 
@@ -70,8 +73,8 @@ button:focus {
 
 .daypicker {
   padding: $padding-half;
-  border-top: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
+  border-top: 1px solid $primary-border-color;
+  border-bottom: 1px solid $primary-border-color;
 
   a {
     width: 40px;
@@ -157,7 +160,7 @@ button {
       background: #FFF;
       padding: 2px;
       border-radius: 50%;
-      border: 1px solid $color-ah;
+      border: 1px solid $secondary-border-color;
     }
 
     &::after {
@@ -200,9 +203,24 @@ button {
 }
 
 
+.pill-button {
+  border: 1px solid $primary-border-color;
+  border-radius: 20px;
+  padding: $padding-half;
+}
+
 
 .filters {
   margin-top: $padding-full;
+
+  > div {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  input {
+    display: none;
+  }
 }
 
 .stack .card:nth-child(3) {
