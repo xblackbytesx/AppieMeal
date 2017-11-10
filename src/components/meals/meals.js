@@ -21,7 +21,7 @@ export default class Wrapper extends Component {
                     {/*
                         Swing Element
                     */}
-                    <Swing
+                    {this.props.meals.length && <Swing
                         className="stack"
                         tagName="div"
                         setStack={(stack)=> this.setState({stack:stack})}
@@ -29,15 +29,20 @@ export default class Wrapper extends Component {
                     >
                         {this.props.meals.map((meal, i) => {
                             return (
-                                <div className="card" key={i} throwoutright={(e) => {
-                                        this.props.selectMeal(this.props.day, this.props.meals[i])
-                                    }}>
-                                    <img src="https://static.ah.nl/static/recepten/img_078555_890x594_JPG.jpg" />
+                                <div className="card" key={i} 
+                                        throwoutright={(e) => {
+                                            this.props.selectMeal(this.props.day, this.props.meals[i])
+                                        }}
+                                        throwoutleft={(e) => {
+                                            this.props.dislikeMeal(this.props.meals[i])
+                                        }}
+                                    >
+                                    <img src={`/${meal.image}`} />
                                     <h2>{meal.name}</h2>
                                 </div>
                             )
                         })}
-                    </Swing>
+                    </Swing>}
                 </div>
             </div>
         )
