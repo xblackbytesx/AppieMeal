@@ -9,7 +9,6 @@ const mapStateToProps = (state, ownProps) => {
   return { 
     meals : state.meals
       .filter((meal) => {
-        console.log(selectedFilters)
         if (!selectedFilters.price) return meal
         return meal.price < selectedFilters.price
       })
