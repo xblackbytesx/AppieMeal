@@ -125,10 +125,20 @@
     "name": "Chinese roerbak met vegaspekjes en groente",
     "image": "img_090525_1600x560_JPG.jpg",
     "ingredients": [{
-      "name": "",
-      "image": "",
-      "size": "",
-      "price": 1
+      "name": "Garden Gourmet Vega spekreepjes",
+      "image": "https://static.ahold.com/cmgtcontent/media//001771700/000/001771766_002_187575_708.jpg",
+      "size": "150 g",
+      "price": 2.59
+    },{
+      "name": "AH Chinese wokgroente taugérode paprika",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303133303036_4_LowRes_JPG.JPG",
+      "size": "400 g",
+      "price": 1.99
+    },{
+      "name": "Amoy Mix & wok noodles",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303133303637_1_LowRes_JPG.JPG",
+      "size": "2 x 150 g",
+      "price": 1.75
     }],
     "keywords": ["roerbak"],
     "price": 4.79,
