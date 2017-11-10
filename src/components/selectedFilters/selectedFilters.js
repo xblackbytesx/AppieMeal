@@ -9,9 +9,16 @@ export default class Wrapper extends Component {
     render() {
         return (
             <div className="filters">
-                {JSON.stringify(this.props.filters)}
-
-                <button onClick={() => this.props.changeFilter(this.props.day, 'price', 5)}>change price to 5</button>
+                {Object.keys(this.props.filters).map((keyName, index) => {
+                    return ( 
+                        <div key={index}>
+                            {keyName} {this.props.filters[keyName] || 'nothing selected'}
+                            <input style={ {"border": "1px solid black"}} type="text" onChange={(e) => { 
+                                this.props.changeFilter(this.props.day, keyName, e.target.value)
+                            }} />
+                        </div>
+                    )
+                })}
             </div>
         )
     }

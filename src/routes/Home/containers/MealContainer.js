@@ -16,6 +16,10 @@ const mapStateToProps = (state, ownProps) => {
       return meal.price < selectedFilters.price
     })
     .filter((meal) => {
+      if (!selectedFilters.time) return meal
+      return meal.time < selectedFilters.time
+    })
+    .filter((meal) => {
       return !(dislikedMeals.indexOf(meal) > -1)
     })
     .filter((meal) => {
