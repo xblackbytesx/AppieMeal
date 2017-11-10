@@ -18,10 +18,7 @@ export default class Wrapper extends Component {
         return (
             <div>
                 <div id="viewport">
-                    {/*
-                        Swing Element
-                    */}
-                    <Swing
+                    {this.props.meals.length && <Swing
                         className="stack"
                         tagName="div"
                         setStack={(stack)=> this.setState({stack:stack})}
@@ -42,7 +39,7 @@ export default class Wrapper extends Component {
                                 </div>
                             )
                         })}
-                    </Swing>
+                    </Swing>}
                 </div>
             </div>
         )
