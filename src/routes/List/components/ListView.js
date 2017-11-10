@@ -5,7 +5,7 @@ import List from './../containers/List'
 export const ListView = (props) => (
   <div>
     <button onClick={() => browserHistory.push('/meal/zaterdag')}>Back to shop</button>
-    <button onClick={() => browserHistory.push('/thank-you')}>Accept</button>
+    <button className="bestellen-knop" onClick={() => browserHistory.push('/thank-you')}>Plaats bestelling</button>
 
     <List />
   </div>
