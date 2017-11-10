@@ -30,6 +30,11 @@ $padding-double: ($padding-full * 2);
   margin: 0;
 }
 
+a:focus,
+button:focus {
+  outline: none;
+}
+
 
 .heading {
   padding: $padding-double 0 0 0;
@@ -43,9 +48,27 @@ $padding-double: ($padding-full * 2);
 
 .daypicker {
   padding: $padding-half;
-
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
+
+  a {
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .page-layout__nav-item--active {
+    border-color: $color-ah;
+  }
+
+  .day-name,
+  .day-num {
+    display: inline-block;
+  }
 }
 
 
@@ -96,11 +119,24 @@ button {
     border-radius: 50%;
     text-align: center;
 
+    .items {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      font-size: 12px;
+      color: $color-ah;
+      background: #FFF;
+      padding: 2px;
+      border-radius: 50%;
+      border: 1px solid $color-ah;
+    }
+
     &::after {
       background: transparent url('../img/shopping-bag.svg') center 0 no-repeat;
       width: 21px;
       height: 26px;
-
     }
   }
 }
