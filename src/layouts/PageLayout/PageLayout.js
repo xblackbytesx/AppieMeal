@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import './PageLayout.scss'
 import headerImg from '../../img/appie-meal-title.svg'
 import SettingsButton from '../../components/settings-button/settings-button'
-import CartButton from '../../components/cart-button/cart-button'
+import CartButton from '../../components/cart-button/CartButtonContainer'
 
 export const PageLayout = ({ children }) => (
   <div className='main text-center'>
