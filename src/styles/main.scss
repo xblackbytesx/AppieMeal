@@ -186,7 +186,6 @@ button {
 
 .card {
   width: 100%;
-  position: absolute;
 
   figure {
     height: 200px;
@@ -210,6 +209,12 @@ button {
 }
 
 
+.stack {
+  .card {
+    position: absolute;
+  }
+}
+
 .pill-button {
   border: 1px solid $primary-border-color;
   border-radius: 20px;
@@ -219,9 +224,12 @@ button {
 
 .filters {
   margin-top: $padding-full;
+  display: flex;
+  flex-flow: row nowrap;
 
   > div {
-    display: inline-block;
+    position: relative;
+    //display: inline-block;
     margin: 0 5px;
   }
 
