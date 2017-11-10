@@ -26,7 +26,7 @@ export default class Wrapper extends Component {
                     >
                         {this.props.meals.map((meal, i) => {
                             return (
-                                <div className="card" key={i} 
+                                <article className="card" key={i}
                                         throwoutright={(e) => {
                                             this.props.selectMeal(this.props.day, this.props.meals[i])
                                         }}
@@ -34,9 +34,13 @@ export default class Wrapper extends Component {
                                             this.props.dislikeMeal(this.props.meals[i])
                                         }}
                                     >
-                                    <img src={`/${meal.image}`} />
-                                    <h2>{meal.name}</h2>
-                                </div>
+                                    <figure>
+                                      <img src={`/${meal.image}`} />
+                                    </figure>
+                                    <section className="card__title">
+                                      <h1>{meal.name}</h1>
+                                    </section>
+                                </article>
                             )
                         })}
                     </Swing>}

@@ -8,7 +8,10 @@ export default class DayPicker extends Component {
       <div className="daypicker">
         {days.map((day, i) => {
           return (
-            <Link key={i} to={`/meal/${day}`} className={`${this.props.selectedMeals[day] ? 'has--meal' : ''}`}activeClassName='page-layout__nav-item--active'>{day.substring(0, 1).toUpperCase() + day.substring(1, 2)}</Link>
+            <Link key={i} to={`/meal/${day}`} className={`${this.props.selectedMeals[day] ? 'has--meal' : ''}`}activeClassName='page-layout__nav-item--active'>
+              <span className="day-name">{day.substring(0, 2)}</span>
+              <span className="day-num">{12 + i}</span>
+              </Link>
           )
         })}
       </div>

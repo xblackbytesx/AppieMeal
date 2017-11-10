@@ -25,14 +25,41 @@ $padding-full: 16px;
 $padding-half: ($padding-full / 2);
 $padding-double: ($padding-full * 2);
 
+.page-layout__viewport {
+  padding-top: 2rem;
+}
+
+.page-layout__nav-item--active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#viewport {
+  height: 500px;
+  padding-top: $padding-double;
+}
+
+.stack {
+  max-width: 90%;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .container {
   padding: 0;
   margin: 0;
 }
 
+a:focus,
+button:focus {
+  outline: none;
+}
+
 
 .heading {
-  padding: $padding-double 0 0 0;
+  padding: $padding-double 0 $padding-half 0;
 
   h1 {
     font-size: 20px;
@@ -43,9 +70,31 @@ $padding-double: ($padding-full * 2);
 
 .daypicker {
   padding: $padding-half;
-
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
+
+  a {
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .has--meal {
+    color: $color-ah;
+  }
+
+  .page-layout__nav-item--active {
+    border-color: $color-ah;
+  }
+
+  .day-name,
+  .day-num {
+    display: inline-block;
+  }
 }
 
 
@@ -55,6 +104,7 @@ button {
   padding: 0;
   border: 0;
   outline: 0;
+  cursor: pointer;
 }
 
 
@@ -96,11 +146,24 @@ button {
     border-radius: 50%;
     text-align: center;
 
+    .items {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      font-size: 12px;
+      color: $color-ah;
+      background: #FFF;
+      padding: 2px;
+      border-radius: 50%;
+      border: 1px solid $color-ah;
+    }
+
     &::after {
       background: transparent url('../img/shopping-bag.svg') center 0 no-repeat;
       width: 21px;
       height: 26px;
-
     }
   }
 }
@@ -112,18 +175,34 @@ button {
 
 
 .card {
-  width: 90%;
+  width: 100%;
   position: absolute;
 
-  img {
-    display: block;
-    width: 100%;
-    pointer-events: none
+  figure {
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: 100%;
+      pointer-events: none
+    }
+  }
+
+  &__title {
+    height: 60px;
+
+    h1 {
+      font-size: 18px;
+      font-weight: bold;
+    }
   }
 }
 
+
+
 .filters {
-  margin-top: 300px;
+  margin-top: $padding-full;
 }
 
 .stack .card:nth-child(3) {

@@ -6,7 +6,6 @@ import Filters from '../containers/SelectedFiltersContainer'
 
 export const HomeView = (props) => (
   <div>
-    {props.params.day}
     <Meals day={props.params.day} />
     <Filters day={props.params.day} />
   </div>
