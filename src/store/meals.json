@@ -303,10 +303,15 @@
     "name": "Aardappellasagne met maïs",
     "image": "img_013521_1600x560_JPG.jpg",
     "ingredients": [{
-      "name": "",
-      "image": "",
-      "size": "",
-      "price": 1
+      "name": "AH BASIC Maiskorrels",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303937303736_1_LowRes_JPG.JPG",
+      "size": "300 g",
+      "price": 0.59
+    },{
+      "name": "AH Roodschillige aardappelschijfjes",
+      "image": "https://static.ah.nl/static/product/AHI_434d50323837383934_2_LowRes_JPG.JPG",
+      "size": "450 g",
+      "price": 1.15
     }],
     "keywords": [""],
     "price": 3.79,
