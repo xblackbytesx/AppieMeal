@@ -28,10 +28,8 @@ const mapStateToProps = (state) => {
     })
 
     return {
-        selectedMeals
+        selectedMeals,
     }
 }
-
-
 
 export default connect(mapStateToProps)(ListContainer)

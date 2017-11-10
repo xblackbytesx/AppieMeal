@@ -4854,6 +4854,10 @@ react-router@^3.0.0:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
+react-slider@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/react-slider/-/react-slider-0.9.0.tgz#584ae63325be115581fc08bf7753adb8e4d4a0b1"
+
 react-swing@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-swing/-/react-swing-1.0.2.tgz#d2e6674fce28829f8ee449b04ab76998ef08aa16"
