@@ -252,10 +252,25 @@
     "name": "Lasagne met ratatouille",
     "image": "img_011562_1600x560_JPG.jpg",
     "ingredients": [{
-      "name": "",
-      "image": "",
-      "size": "",
-      "price": 1
+      "name": "AH Lasagne",
+      "image": "https://static.ah.nl/static/product/AHI_434d50323431343235_2_LowRes_JPG.JPG",
+      "size": "250 g",
+      "price": 1.29
+    },{
+      "name": "AH Passata di pomodoro",
+      "image": "https://static.ah.nl/static/product/AHI_434d50313438333431_1_LowRes_JPG.JPG",
+      "size": "500 g",
+      "price": 0.65
+    },{
+      "name": "AH Mager rundergehakt",
+      "image": "https://static.ah.nl/static/product/AHI_434d50313237363639_2_LowRes_JPG.JPG",
+      "size": "500 g",
+      "price": 3.75
+    },{
+      "name": "AH Verspakket Italiaanse lasagne",
+      "image": "https://static.ah.nl/static/product/AHI_434d50313636363539_3_LowRes_JPG.JPG",
+      "size": "1200 g",
+      "price": 4.49
     }],
     "keywords": ["italiaans"],
     "price": 2.89,
