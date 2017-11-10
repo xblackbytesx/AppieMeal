@@ -32,15 +32,22 @@ export default class Filter extends Component {
           {this.props.filterName === 'time' &&
             <div className="time">
               <h2>Hoe lang wil je maximaal bezig zijn?</h2>
-              <span className="current-value">
-                { this.props.filterValue }
-              </span>
-              <span className="current-unit">
-                Minuten
-              </span>
+
+              <div className="current-value-wrapper">
+                <span className="current-value">
+                  { this.props.filterValue }
+                </span>
+
+                <span className="value-unit">
+                  Minuten
+                </span>
+              </div>
+
               <div className="slider-wrapper">
                 <ReactSlider defaultValue={this.props.filterValue} min={10} max={100} onChange={(e) => this.props.changeHandler(this.props.day, this.props.filterName, e)} />
               </div>
+
+              <a onClick={()=> this.toggleState()} >OK</a>
             </div>
            }
         </div>

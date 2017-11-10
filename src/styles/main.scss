@@ -68,6 +68,10 @@ $secondary-border-color: $color-ah;
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 a:focus,
 a:hover {
   text-decoration: none;
@@ -273,12 +277,20 @@ button {
     width: 100%;
     height: 30%;
     transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform: translateY(100%);
+    transform: translateY(110%);
     z-index: 1;
-    box-shadow: 2px 3px 3px 1px hsla(300,2%,67%,.22);
+    -webkit-box-shadow: 0px -5px 8px 0px rgba(50, 50, 50, 0.6);
+    -moz-box-shadow:    0px -5px 8px 0px rgba(50, 50, 50, 0.6);
+    box-shadow:         0px -5px 8px 0px rgba(50, 50, 50, 0.6);
 
     h2 {
-      font-size: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    a {
+      color: $color-ah
     }
   }
 
@@ -317,27 +329,28 @@ button {
 
 .slider-wrapper {
   max-width: 90%;
-  margin: 0 auto;
+  margin: 0 auto $padding-full 0;
 }
 
 .slider {
   width: 100%;
   max-width: 500px;
-  height: 20px;
+  height: 16px;
   border: 1px solid $primary-border-color;
   border-radius: 9px;
 }
 
 .handle {
   top: -50%;
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 32px;
   font-size: 0.9em;
   text-align: center;
-  background-color: $color-ah;
   border-radius: 30%;
   color: white;
   cursor: pointer;
+
+  background: transparent url('../img/slider-button.svg') 0 0 no-repeat;
 }
 
 .bedankt {
@@ -345,9 +358,25 @@ button {
   img {
     max-width: 100%;
   }
+
   h1 {
     padding: 25px 0;
     font-size: 1.2em;
     line-height: 1.4;
+  }
+}
+
+.current-value-wrapper {
+  padding: $padding-full;
+
+  .current-value {
+    font-size: 34px;
+    font-weight: bold;
+    color: $color-ah;
+  }
+
+  .value-unit {
+    display: block;
+    font-size: 16px;
   }
 }
