@@ -31,7 +31,7 @@
       "sugar": 12
     },
     "time": 15,
-    "difficulty": "1"
+    "difficulty": 1
   }, {
     "name": "AH Hollandse stamppot",
     "image": "AHI_434d50363633313432_1_LowRes_JPG.JPG",
@@ -49,7 +49,7 @@
       "sugar": 12
     },
     "time": 5,
-    "difficulty": "1"
+    "difficulty": 1
   }, {
     "name": "Knorr Wereldgerecht Borrito",
     "image": "Knorr-wereldgerecht-image@2x.png",
@@ -87,7 +87,7 @@
       "sugar": 12
     },
     "time": 5,
-    "difficulty": "0"
+    "difficulty": 0
   }, {
     "name": "Meergranenpannenkoeken met groenten",
     "image": "img_073325_1600x560_JPG.jpg",
@@ -120,7 +120,7 @@
       "sugar": 12
     },
     "time": 10,
-    "difficulty": "0"
+    "difficulty": 0
   }, {
     "name": "Chinese roerbak met vegaspekjes en groente",
     "image": "img_090525_1600x560_JPG.jpg",
@@ -148,7 +148,7 @@
       "sugar": 12
     },
     "time": 20,
-    "difficulty": "0"
+    "difficulty": 0
   }, {
     "name": "Ovenschotel met herfstgroenten en romige kaassaus",
     "image": "img_084637_1600x560_JPG.jpg",
@@ -181,7 +181,7 @@
       "sugar": 12
     },
     "time": 40,
-    "difficulty": "1"
+    "difficulty": 1
   }, {
     "name": "Masalakip met boontjes",
     "image": "img_004759_1600x560_JPG.jpg",
@@ -214,7 +214,7 @@
       "sugar": 12
     },
     "time": 15,
-    "difficulty": "2"
+    "difficulty": 2
   }, {
     "name": "Biefstukpuntjes met wokgroenten",
     "image": "img_014550_1600x560_JPG.jpg",
@@ -247,7 +247,7 @@
       "sugar": 12
     },
     "time": 13,
-    "difficulty": "1"
+    "difficulty": 1
   }, {
     "name": "Lasagne met ratatouille",
     "image": "img_011562_1600x560_JPG.jpg",
@@ -280,7 +280,7 @@
       "sugar": 12
     },
     "time": 1,
-    "difficulty": "2"
+    "difficulty": 2
   }, {
     "name": "Groene pastasalade",
     "image": "img_007206_1600x560_JPG.jpg",
@@ -298,7 +298,7 @@
       "sugar": 12
     },
     "time": 7,
-    "difficulty": "1"
+    "difficulty": 1
   }, {
     "name": "Aardappellasagne met maïs",
     "image": "img_013521_1600x560_JPG.jpg",
@@ -321,7 +321,7 @@
       "sugar": 12
     },
     "time": 45,
-    "difficulty": "0"
+    "difficulty": 1
   }, {
     "name": "Preitaart met rauwe ham",
     "image": "img_098964_1600x560_JPG.jpg",
@@ -359,6 +359,6 @@
       "sugar": 12
     },
     "time": 35,
-    "difficulty": "0"
+    "difficulty": 0
   }]
 }
