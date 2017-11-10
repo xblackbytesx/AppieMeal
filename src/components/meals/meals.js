@@ -29,9 +29,14 @@ export default class Wrapper extends Component {
                     >
                         {this.props.meals.map((meal, i) => {
                             return (
-                                <div className="card" key={i} throwoutright={(e) => {
-                                        this.props.selectMeal(this.props.day, this.props.meals[i])
-                                    }}>
+                                <div className="card" key={i} 
+                                        throwoutright={(e) => {
+                                            this.props.selectMeal(this.props.day, this.props.meals[i])
+                                        }}
+                                        throwoutleft={(e) => {
+                                            this.props.dislikeMeal(this.props.meals[i])
+                                        }}
+                                    >
                                     <img src="https://static.ah.nl/static/recepten/img_078555_890x594_JPG.jpg" />
                                     <h2>{meal.name}</h2>
                                 </div>
