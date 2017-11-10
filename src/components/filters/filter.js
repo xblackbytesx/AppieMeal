@@ -89,7 +89,7 @@ export default class Filter extends Component {
               </div>
 
               <div className="slider-wrapper">
-                <ReactSlider defaultValue={this.props.filterValue} min={5} max={100} onChange={(e) => this.props.changeHandler(this.props.day, this.props.filterName, e)} />
+                <ReactSlider defaultValue={this.props.filterValue} min={6} max={100} onChange={(e) => this.props.changeHandler(this.props.day, this.props.filterName, e)} />
               </div>
 
               <a onClick={()=> this.toggleState()} >OK</a>
