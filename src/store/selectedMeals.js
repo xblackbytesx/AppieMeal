@@ -2,7 +2,7 @@
 // Constants
 // ------------------------------------
 export const SELECT_MEAL = 'SELECT_MEAL'
-export const NO_MEAL = 'NO_MEAL'
+export const SELECT_NO_MEAL = 'SELECT_NO_MEAL'
 
 // ------------------------------------
 // Actions
@@ -17,9 +17,9 @@ export function selectMeal (day, meal) {
   }
 }
 
-export function noMeal (day) {
+export function selectNoMeal (day) {
   return {
-    type    : NO_MEAL,
+    type    : SELECT_NO_MEAL,
     payload : {
       day,
     }
@@ -28,7 +28,7 @@ export function noMeal (day) {
 
 export const actions = {
   selectMeal,
-  noMeal,
+  selectNoMeal,
 }
 
 // ------------------------------------
@@ -41,10 +41,10 @@ const ACTION_HANDLERS = {
       [action.payload.day]: action.payload.meal,
     }
   },
-  [NO_MEAL]    : (state, action) => {
+  [SELECT_NO_MEAL]    : (state, action) => {
     return {
       ...state,
-      [action.payload.day]: 'NO_MEAL',
+      [action.payload.day]: "NO_MEAL"
     }
   }
 }

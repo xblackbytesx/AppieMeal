@@ -90,6 +90,13 @@ button:focus {
     color: $color-ah;
   }
 
+  .has--meal.no--meal {
+    span {
+      opacity: 0.2;
+      color: #000;
+    }
+  }
+
   .page-layout__nav-item--active {
     border-color: $color-ah;
   }
