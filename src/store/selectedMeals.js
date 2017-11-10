@@ -7,6 +7,7 @@ console.log(days)
 // Constants
 // ------------------------------------
 export const SELECT_MEAL = 'SELECT_MEAL'
+export const DESELECT_MEAL = 'DESELECT_MEAL'
 export const SELECT_NO_MEAL = 'SELECT_NO_MEAL'
 
 // ------------------------------------
@@ -25,6 +26,15 @@ export function select (day, meal) {
 export function selectNo (day) {
   return {
     type    : SELECT_NO_MEAL,
+    payload : {
+      day,
+    }
+  }
+}
+
+export function deselectMeal (day) {
+  return {
+    type    : DESELECT_MEAL,
     payload : {
       day,
     }
@@ -83,6 +93,13 @@ const ACTION_HANDLERS = {
     return {
       ...state,
       [action.payload.day]: "NO_MEAL"
+    }
+  },
+  [DESELECT_MEAL]    : (state, action) => {
+    const newState = { ...state }
+    delete newState[action.payload.day];
+    return {
+      ...newState
     }
   }
 }
