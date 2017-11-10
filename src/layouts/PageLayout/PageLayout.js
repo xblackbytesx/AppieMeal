@@ -13,8 +13,8 @@ export const PageLayout = ({ children }) => (
     <Link to='/meal/maandag' activeClassName='page-layout__nav-item--active'>Maandag</Link>
     <Link to='/meal/dinsdag' activeClassName='page-layout__nav-item--active'>Dinsdag</Link>
     <Link to='/meal/woensdag' activeClassName='page-layout__nav-item--active'>Woensdag</Link>
-    <Link to='/meal/maandag' activeClassName='page-layout__nav-item--active'>Donderdag</Link>
-    <Link to='/meal/maandag' activeClassName='page-layout__nav-item--active'>Vrijdag</Link>
+    <Link to='/meal/donderdag' activeClassName='page-layout__nav-item--active'>Donderdag</Link>
+    <Link to='/meal/vrijdag' activeClassName='page-layout__nav-item--active'>Vrijdag</Link>
     <div className='page-layout__viewport'>
       {children}
     </div>

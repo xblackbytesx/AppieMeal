@@ -4,9 +4,17 @@ import { selectMeal } from './../../../store/selectedMeals'
 
 import Meals from '../../../components/meals/meals'
 
-const mapStateToProps = (state) => ({
-  meals : state.meals
-})
+const mapStateToProps = (state, ownProps) => {
+  const selectedFilters = state.selectedFilters[ownProps.day];
+  return { 
+    meals : state.meals
+      .filter((meal) => {
+        console.log(selectedFilters)
+        if (!selectedFilters.price) return meal
+        return meal.price < selectedFilters.price
+      })
+  }
+}
 
 const mapDispatchToProps = {
   selectMeal,
