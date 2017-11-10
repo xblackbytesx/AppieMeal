@@ -86,7 +86,7 @@
       "fat": 12,
       "sugar": 12
     },
-    "time": 5,
+    "time": 26,
     "difficulty": 0
   }, {
     "name": "Meergranenpannenkoeken met groenten",
@@ -279,7 +279,7 @@
       "fat": 12,
       "sugar": 12
     },
-    "time": 1,
+    "time": 100,
     "difficulty": 2
   }, {
     "name": "Groene pastasalade",
@@ -297,7 +297,7 @@
       "fat": 12,
       "sugar": 12
     },
-    "time": 7,
+    "time": 30,
     "difficulty": 1
   }, {
     "name": "Aardappellasagne met maïs",
