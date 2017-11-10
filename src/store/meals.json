@@ -219,10 +219,25 @@
     "name": "Biefstukpuntjes met wokgroenten",
     "image": "img_014550_1600x560_JPG.jpg",
     "ingredients": [{
-      "name": "",
-      "image": "",
-      "size": "",
-      "price": 1
+      "name": "AH Biefstukpuntjes",
+      "image": "https://static.ah.nl/static/product/AHI_434d50323032313133_3_LowRes_JPG.JPG",
+      "size": "300 g",
+      "price": 5.16
+    },{
+      "name": "AH Excellent Italiaanse roerbakgroente venkelasperge",
+      "image": "https://static.ah.nl/static/product/AHI_434d50323437323933_2_LowRes_JPG.JPG",
+      "size": "380 g",
+      "price": 2.99
+    },{
+      "name": "AH Pandan rijst",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303632383934_3_LowRes_JPG.JPG",
+      "size": "1 kg",
+      "price": 2.69
+    },{
+      "name": "Verstegen Pure specerijen mengeling 5 kruiden",
+      "image": "https://static.ahold.com/cmgtcontent/media//001381700/000/001381794_001_375979_708.jpg",
+      "size": "40 g",
+      "price": 1.59
     }],
     "keywords": ["oosters"],
     "price": 4.99,
