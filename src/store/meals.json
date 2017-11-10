@@ -3,10 +3,25 @@
     "name": "Saté met frietjes",
     "image": "img_007354_1600x560_JPG.jpg",
     "ingredients": [{
-      "name": "",
-      "image": "",
-      "size": "",
-      "price": 1
+      "name": "AH Satésaus",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303738373732_1_LowRes_JPG.JPG",
+      "size": "500 g",
+      "price": 1.89
+    },{
+      "name": "AH BASIC Frites",
+      "image": "https://static.ah.nl/static/product/AHI_434d50313132303631_1_LowRes_JPG.JPG",
+      "size": "2.5 kg",
+      "price": 1.75
+    },{
+      "name": "AH Broccoli",
+      "image": "https://static.ahold.com/cmgtcontent/media//000973900/000/000973942_002_4177_708.jpg",
+      "size": "500 g",
+      "price": 1.25
+    },{
+      "name": "AH Scharrel kipfilet",
+      "image": "https://www.ah.nl/producten/product/wi165533/ah-scharrel-kipfilet",
+      "size": "380 g",
+      "price": 4.30
     }],
     "keywords": ["sate"],
     "price": 4.99,
