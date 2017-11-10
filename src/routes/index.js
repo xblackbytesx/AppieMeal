@@ -3,6 +3,7 @@ import CoreLayout from '../layouts/PageLayout/PageLayout'
 import Home from './Home'
 import Favourites from './Favourites'
 import CounterRoute from './Counter'
+import ThankYou from './ThankYou'
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
@@ -20,6 +21,10 @@ export const createRoutes = (store) => ({
     {
       ...Favourites,
       path: '/favourites/:day',
+    },
+    {
+      ...ThankYou,
+      path: '/thank-you',
     }
   ]
 })
