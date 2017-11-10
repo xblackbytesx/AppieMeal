@@ -19,3 +19,89 @@ body {
 *:after {
   box-sizing: inherit;
 }
+
+$color-ah: #3b9fe2;
+$padding-full: 16px;
+$padding-half: 8px;
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: 0;
+  border: 0;
+  outline: 0;
+}
+
+
+.header {
+  position: relative;
+  background: $color-ah;
+  color: #FFF;
+  padding: $padding-full;
+
+  &__button {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::after {
+      display: inline-block;
+      content: '';
+    }
+  }
+
+  &__button--settings {
+    left: $padding-half;
+
+    &::after {
+      background: transparent url('../img/settings.svg') 0 0 no-repeat;
+      width: 33px;
+      height: 33px;
+    }
+  }
+
+  &__button--cart {
+    right: $padding-half;
+    width: 40px;
+    height: 40px;
+    background: #FFF;
+    border-radius: 50%;
+    text-align: center;
+
+    &::after {
+      background: transparent url('../img/shopping-bag.svg') center 0 no-repeat;
+      width: 21px;
+      height: 26px;
+
+    }
+  }
+}
+
+.page-layout__viewport {
+  padding: $padding-half;
+}
+
+
+
+.card {
+  width: 90%;
+  position: absolute;
+
+  img {
+    display: block;
+    width: 100%;
+    pointer-events: none
+  }
+}
+
+
+.stack .card:nth-child(3) {
+  transform: translate(2px, 2px) rotate(0.4deg);
+}
+.stack .card:nth-child(2) {
+  transform: translate(-4px, -2px) rotate(-1deg);
+}

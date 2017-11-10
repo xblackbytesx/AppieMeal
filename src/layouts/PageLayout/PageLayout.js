@@ -2,12 +2,19 @@ import React from 'react'
 import { IndexLink, Link } from 'react-router'
 import PropTypes from 'prop-types'
 import './PageLayout.scss'
+import headerImg from '../../img/appie-meal-title.svg'
+import SettingsButton from '../../components/settings-button/settings-button'
+import CartButton from '../../components/cart-button/cart-button'
 
 export const PageLayout = ({ children }) => (
-  <div className='container text-center'>
-    <header>
-      <h1>Appie Meal</h1>
+  <div className='main text-center'>
+
+    <header className="header">
+      <SettingsButton />
+      <img src={ headerImg } alt="AppieMeal" />
+      <CartButton />
     </header>
+
     <IndexLink to='/' activeClassName='page-layout__nav-item--active'>Home</IndexLink>
     {' · '}
     <Link to='/counter' activeClassName='page-layout__nav-item--active'>Counter</Link>
