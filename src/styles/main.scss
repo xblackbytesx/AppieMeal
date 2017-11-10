@@ -261,7 +261,16 @@ button {
   }
 
   &--price {
+    padding-left: 25px;
     background-image: url('../img/euro.svg');
+  }
+
+  &--calories {
+    background-image: url('../img/calories.svg');
+  }
+
+  &--difficulity {
+    background-image: url('../img/difficulty.svg');
   }
 }
 

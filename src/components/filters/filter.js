@@ -22,7 +22,7 @@ export default class Filter extends Component {
       <div className={controlsOpen}>
         <button className={`pill-button pill-button--${this.props.filterName} pill-button--${this.props.filterValue ? 'active' : 'inactive'}`} onClick={()=> this.toggleState()}>
           <span className="pill-button__value">
-            {this.props.filterValue || '.'}
+            {this.props.filterValue || '400'}
           </span>
         </button>
 
