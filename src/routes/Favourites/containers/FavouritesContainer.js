@@ -3,6 +3,9 @@ import React from 'react'
 
 export const Favourites = (props) => (
     <div className="content-container">
+    <section className="heading">
+    <h1>Favorieten</h1>
+    </section>
         {props.meals.map((meal, i) => {
             return(
                  <div>
