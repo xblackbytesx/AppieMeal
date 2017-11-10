@@ -16,7 +16,7 @@
       "sugar": 12
     },
     "time": 15,
-    "difficulty": "medium"
+    "difficulty": "1"
   }, {
     "name": "AH Hollandse stamppot",
     "image": "AHI_434d50363633313432_1_LowRes_JPG.JPG",
@@ -52,7 +52,7 @@
       "sugar": 12
     },
     "time": 10,
-    "difficulty": "beginner"
+    "difficulty": "0"
   }, {
     "name": "Chinese roerbak met vegaspekjes en groente",
     "image": "img_090525_1600x560_JPG.jpg",
@@ -70,7 +70,7 @@
       "sugar": 12
     },
     "time": 20,
-    "difficulty": "beginner"
+    "difficulty": "0"
   }, {
     "name": "Ovenschotel met herfstgroenten en romige kaassaus",
     "image": "img_084637_1600x560_JPG.jpg",
@@ -88,7 +88,7 @@
       "sugar": 12
     },
     "time": 40,
-    "difficulty": "medium"
+    "difficulty": "1"
   }, {
     "name": "Masalakip met boontjes",
     "image": "img_004759_1600x560_JPG.jpg",
@@ -106,7 +106,7 @@
       "sugar": 12
     },
     "time": 15,
-    "difficulty": "beginner"
+    "difficulty": "2"
   }, {
     "name": "Biefstukpuntjes met wokgroenten",
     "image": "img_014550_1600x560_JPG.jpg",
@@ -124,7 +124,7 @@
       "sugar": 12
     },
     "time": 13,
-    "difficulty": "beginner"
+    "difficulty": "1"
   }, {
     "name": "Lasagne met ratatouille",
     "image": "img_011562_1600x560_JPG.jpg",
@@ -142,7 +142,7 @@
       "sugar": 12
     },
     "time": 1,
-    "difficulty": "medium"
+    "difficulty": "2"
   }, {
     "name": "Groene pastasalade",
     "image": "img_007206_1600x560_JPG.jpg",
@@ -160,7 +160,7 @@
       "sugar": 12
     },
     "time": 7,
-    "difficulty": "beginner"
+    "difficulty": "1"
   }, {
     "name": "Aardappellasagne met maïs",
     "image": "img_013521_1600x560_JPG.jpg",
@@ -178,6 +178,6 @@
       "sugar": 12
     },
     "time": 45,
-    "difficulty": "beginner"
+    "difficulty": "0"
   }]
 }
