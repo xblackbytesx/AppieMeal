@@ -325,6 +325,9 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    &:visited{
+     font-color: #FFF;
+    }
   }
 }
 
