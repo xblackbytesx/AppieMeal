@@ -13,7 +13,7 @@ export default class Wrapper extends Component {
             stack: null
         };
     }
-    
+
     render() {
         return (
             <div>
