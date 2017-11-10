@@ -5,6 +5,7 @@ import Favourites from './Favourites'
 import CounterRoute from './Counter'
 import ThankYou from './ThankYou'
 import ListView from './List'
+import EndView from './End'
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
@@ -30,6 +31,10 @@ export const createRoutes = (store) => ({
     {
       ...ListView,
       path: '/list',
+    },
+    {
+      ...EndView,
+      path: '/end',
     }
   ]
 })

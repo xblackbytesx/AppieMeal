@@ -315,6 +315,7 @@ button {
   &__link{
     font-size: 16px;
     font-weight: normal;
+
     margin-right: 20px;
     background-color: #3b9fe2;
     border: none;
@@ -393,5 +394,21 @@ button {
   .value-unit {
     display: block;
     font-size: 16px;
+  }
+}
+
+.end {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $color-ah;
+
+  img {
+    position: fixed;
+    top: 30%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
   }
 }
