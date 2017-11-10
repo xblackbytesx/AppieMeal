@@ -6,7 +6,7 @@ import Meals from '../containers/MealContainer'
 export const HomeView = (props) => (
   <div>
     {props.params.day}
-    <Meals />
+    <Meals day={props.params.day} />
   </div>
 )
 
