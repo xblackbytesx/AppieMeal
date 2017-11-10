@@ -25,6 +25,28 @@ $padding-full: 16px;
 $padding-half: ($padding-full / 2);
 $padding-double: ($padding-full * 2);
 
+.page-layout__viewport {
+  padding-top: 2rem;
+}
+
+.page-layout__nav-item--active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#viewport {
+  height: 500px;
+  padding-top: $padding-double;
+}
+
+.stack {
+  max-width: 90%;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .container {
   padding: 0;
   margin: 0;
@@ -59,6 +81,10 @@ button:focus {
     border: 1px solid #FFF;
     border-radius: 10px;
     padding: 5px;
+  }
+
+  .has--meal {
+    color: $color-ah;
   }
 
   .page-layout__nav-item--active {
@@ -149,7 +175,7 @@ button {
 
 
 .card {
-  width: 90%;
+  width: 100%;
   position: absolute;
 
   figure {
@@ -176,7 +202,7 @@ button {
 
 
 .filters {
-  margin-top: 300px;
+  margin-top: $padding-full;
 }
 
 .stack .card:nth-child(3) {

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './PageLayout.scss'
 
 import Header from '../../components/header/header'
-import DayPicker from '../../components/day-picker/day-picker'
+import DayPicker from '../../components/day-picker/DayPickerContainer'
 
 export const PageLayout = ({ children }) => (
   <div className='main text-center'>
