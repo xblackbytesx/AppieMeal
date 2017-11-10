@@ -42,7 +42,7 @@ export function selectMeal(day, meal) {
     if (daysWithoutMeal.length) {
       browserHistory.push('/meal/' + daysWithoutMeal[0])
     } else {
-      browserHistory.push('/thank-you')
+      browserHistory.push('/list')
     }
 
   };
@@ -59,7 +59,7 @@ export function selectNoMeal(day) {
     if (daysWithoutMeal.length) {
       browserHistory.push('/meal/' + daysWithoutMeal[0])
     } else {
-      browserHistory.push('/thank-you')
+      browserHistory.push('/list')
     }
   };
 }

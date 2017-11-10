@@ -9,6 +9,7 @@ const mapStateToProps = (state, ownProps) => {
   const selectedFilters = state.selectedFilters[ownProps.day]
   const dislikedMeals = state.dislikedMeals
   const selectedMeals = state.selectedMeals
+  const selectedMeal = state.selectedMeals[ownProps.day]
 
   const meals = state.meals
     .filter((meal) => {
@@ -26,7 +27,8 @@ const mapStateToProps = (state, ownProps) => {
       return !(Object.values(selectedMeals).indexOf(meal) > -1)
     })
   return { 
-    meals,    
+    meals,
+    selectedMeal,
   }
 }
 

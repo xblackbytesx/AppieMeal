@@ -18,7 +18,28 @@ export default class Wrapper extends Component {
         return (
             <div>
                 <div id="viewport">
-                    {this.props.meals.length && <Swing
+                    {this.props.selectedMeal && 
+                        <div className="heading">
+                            {typeof this.props.selectedMeal === 'string' ? 
+                            <div>
+                                <h1>Voor {this.props.day} wordt er geen eten geleverd</h1>
+                            </div>
+                            :
+                            <div>
+                                <h1>Op {this.props.day} eten we</h1>
+                                <article className="card card--selected">
+                                    <figure>
+                                        <img src={`/${this.props.selectedMeal.image}`} />
+                                    </figure>
+                                    <section className="card__title">
+                                        <h1>{this.props.selectedMeal.name}</h1>
+                                    </section>
+                                </article>
+                            </div>
+                            }
+                        </div>
+                    }
+                    {!this.props.selectedMeal && this.props.meals.length && <Swing
                         className="stack"
                         tagName="div"
                         setStack={(stack)=> this.setState({stack:stack})}

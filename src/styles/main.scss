@@ -40,6 +40,10 @@ $secondary-border-color: $color-ah;
 #viewport {
   height: 350px;
   padding-top: $padding-double;
+
+  > .heading {
+    padding-top: 0;
+  }
 }
 
 .content-container {
