@@ -12,7 +12,9 @@ export default class Wrapper extends Component {
                 {Object.keys(this.props.filters).map((keyName, index) => {
                     return (
                         <div key={index}>
-                            <button className="pill-button">{keyName} {this.props.filters[keyName] || 'nothing selected'}</button>
+                            <button className={`pill-button ${this.props.filters[keyName] ? 'active' : 'inactive'}`}>
+                              {keyName} {this.props.filters[keyName] || ''}
+                              </button>
                             <input style={ {"border": "1px solid black"}} type="text" onChange={(e) => {
                                 this.props.changeFilter(this.props.day, keyName, e.target.value)
                             }} />
