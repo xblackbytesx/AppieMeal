@@ -1,11 +1,15 @@
 import { combineReducers } from 'redux'
 import locationReducer from './location'
 import mealReducer from './meals'
+import selectedMealsReducer from './selectedMeals'
+import selectedFiltersReducer from './selectedFilters'
 
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
     location: locationReducer,
     meals: mealReducer,
+    selectedMeals: selectedMealsReducer,
+    selectedFilters: selectedFiltersReducer,
     ...asyncReducers
   })
 }
