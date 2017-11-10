@@ -1,0 +1,37 @@
+{
+  "meals": [{
+    "name": "pasta",
+    "ingredients": [{
+      "name": "",
+      "image": "",
+      "size": "",
+      "price": 1
+    }],
+    "keywords": ["vegetarisch"],
+    "price": 1,
+    "nutrition": {
+      "calories": 123,
+      "fat": 12,
+      "sugar": 12
+    },
+    "time": 10,
+    "difficulty": "beginner"
+  }, {
+    "name": "pasta",
+    "ingredients": [{
+      "name": "",
+      "image": "",
+      "size": "",
+      "price": 1
+    }],
+    "keywords": ["vegetarisch"],
+    "price": 1,
+    "nutrition": {
+      "calories": 123,
+      "fat": 12,
+      "sugar": 12
+    },
+    "time": 10,
+    "difficulty": "beginner"
+  }]
+}
