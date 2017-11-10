@@ -153,10 +153,25 @@
     "name": "Ovenschotel met herfstgroenten en romige kaassaus",
     "image": "img_084637_1600x560_JPG.jpg",
     "ingredients": [{
-      "name": "",
-      "image": "",
-      "size": "",
-      "price": 1
+      "name": "Oven",
+      "image": "https://image.coolblue.io/products/539536?height=390&width=422",
+      "size": "40 liter",
+      "price": 111
+    },{
+      "name": "AH Spinazie à la crème",
+      "image": "https://static.ah.nl/static/product/AHI_434d50313937353731_1_LowRes_JPG.JPG",
+      "size": "450 g",
+      "price": 0.49
+    },{
+      "name": "AH Goudse belegen 48+ plakken",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303832323630_10_LowRes_JPG.JPG",
+      "size": "400 g",
+      "price": 3.96
+    },{
+      "name": "AH Kilo'tje iets kruimige aardappelen",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303935323931_3_LowRes_JPG.JPG",
+      "size": "1 kg",
+      "price": 1.85
     }],
     "keywords": ["ovenschotel"],
     "price": 4.99,
