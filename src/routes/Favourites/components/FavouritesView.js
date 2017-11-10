@@ -3,9 +3,8 @@ import './FavouritesView.scss'
 import FavouritesContainer from './../containers/FavouritesContainer'
 
 export const FavouritesView = (props) => (
-  <div>
-      JEROEN!!!! NIET DOEN!!!!
 
+  <div>
       <FavouritesContainer />
   </div>
 )
