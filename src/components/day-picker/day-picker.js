@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { IndexLink, Link } from 'react-router'
 
+export const days = ['zaterdag', 'zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag']
+
 export default class DayPicker extends Component {
   render() {
-    const days = ['zaterdag', 'zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag']
+    
     return (
       <div className="daypicker">
         {days.map((day, i) => {

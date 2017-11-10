@@ -1,3 +1,7 @@
+
+import days from './../components/day-picker/day-picker'
+
+console.log(days)
 // ------------------------------------
 // Constants
 // ------------------------------------
