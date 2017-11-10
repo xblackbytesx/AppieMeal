@@ -37,7 +37,7 @@ export default class Wrapper extends Component {
                                             this.props.dislikeMeal(this.props.meals[i])
                                         }}
                                     >
-                                    <img src="https://static.ah.nl/static/recepten/img_078555_890x594_JPG.jpg" />
+                                    <img src={`/${meal.image}`} />
                                     <h2>{meal.name}</h2>
                                 </div>
                             )
