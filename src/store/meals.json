@@ -1,23 +1,24 @@
 {
   "meals": [{
-    "name": "pasta",
+    "name": "Saté met frietjes",
+    "image": "img_007354_1600x560_JPG.jpg",
     "ingredients": [{
       "name": "",
       "image": "",
       "size": "",
       "price": 1
     }],
-    "keywords": ["vegetarisch"],
-    "price": 1,
+    "keywords": ["sate"],
+    "price": 4.99,
     "nutrition": {
       "calories": 123,
       "fat": 12,
       "sugar": 12
     },
     "time": 10,
-    "difficulty": "beginner"
+    "difficulty": "medium"
   }, {
-    "name": "pasta",
+    "name": "AH Hollandse stamppot",
     "ingredients": [{
       "name": "",
       "image": "",
