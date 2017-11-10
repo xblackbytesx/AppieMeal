@@ -225,7 +225,7 @@ button {
 .filters {
   margin-top: $padding-full;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 
   > div {
     position: relative;
