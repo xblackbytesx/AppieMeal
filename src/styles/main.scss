@@ -42,12 +42,21 @@ $secondary-border-color: $color-ah;
   padding-top: $padding-double;
 }
 
+.content-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .stack {
   max-width: 90%;
   position: relative;
   text-align: center;
   height: 100%;
   margin: 0 auto;
+
+  .card {
+    position: absolute;
+  }
 }
 
 .container {
@@ -205,13 +214,6 @@ button {
       font-size: 18px;
       font-weight: bold;
     }
-  }
-}
-
-
-.stack {
-  .card {
-    position: absolute;
   }
 }
 
