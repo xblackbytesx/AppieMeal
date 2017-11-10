@@ -17,34 +17,25 @@ export default class Wrapper extends Component {
     render() {
         return (
             <div>
-                <div id="viewport">
-                    {this.props.meals.length && <Swing
-                        className="stack"
-                        tagName="div"
-                        setStack={(stack)=> this.setState({stack:stack})}
-                        ref="stack"
-                    >
-                        {this.props.meals.map((meal, i) => {
-                            return (
-                                <article className="card" key={i}
-                                        throwoutright={(e) => {
-                                            this.props.selectMeal(this.props.day, this.props.meals[i])
-                                        }}
-                                        throwoutleft={(e) => {
-                                            this.props.dislikeMeal(this.props.meals[i])
-                                        }}
-                                    >
-                                    <figure>
-                                      <img src={`/${meal.image}`} />
-                                    </figure>
-                                    <section className="card__title">
-                                      <h1>{meal.name}</h1>
-                                    </section>
-                                </article>
-                            )
-                        })}
-                    </Swing>}
-                </div>
+                 <article className="card" >
+                 <figure>
+                 <img src={`/${meal.image}`} />
+                 </figure>
+                 <section className="card__title">
+                    <h1>{meal.name}</h1>
+                 </section>
+                 </article>
+                 <article className="card" >
+                 <figure>
+                 <img src={`/${meal.image}`} />
+                 </figure>
+                 <section className="card__title">
+                     <h1>{meal.name}</h1>
+                 </section>
+                 </article>
+                 )
+             })}
+             }
             </div>
         )
     }
