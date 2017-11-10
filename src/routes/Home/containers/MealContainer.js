@@ -25,7 +25,6 @@ const mapStateToProps = (state, ownProps) => {
     .filter((meal) => {
       return !(Object.values(selectedMeals).indexOf(meal) > -1)
     })
-  console.log(meals)
   return { 
     meals,    
   }

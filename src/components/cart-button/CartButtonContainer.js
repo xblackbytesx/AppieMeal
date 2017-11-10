@@ -7,6 +7,7 @@ const mapStateToProps = (state) => {
   let selectedDays = Object.keys(state.selectedMeals);
 
   selectedDays.forEach(day => {
+      if (typeof state.selectedMeals[day] === "string") return;
       ingredients = [...ingredients, ...state.selectedMeals[day].ingredients]
   })
 
