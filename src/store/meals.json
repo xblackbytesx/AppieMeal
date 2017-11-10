@@ -360,5 +360,44 @@
     },
     "time": 35,
     "difficulty": 0
-  }]
+  }
+  , {
+      "name": "Stap-voor-stap coq au vin",
+      "image": "img_046502_1600x560_JPG.jpg",
+      "ingredients": [{
+        "name": "AH Prei",
+        "image": "https://static.ah.nl/static/product/AHI_434d50303133303736_3_LowRes_JPG.JPG",
+        "size": "stuk",
+        "price": 0.55
+      },{
+        "name": "Winemaker's Lot Carménère Cabernet Sauvignon",
+        "image": "https://static.ah.nl/static/product/AHI_434d50323435333735_2_LowRes_JPG.JPG",
+        "size": "0.75 l",
+        "price": 6.98
+      },{
+        "name": "AH Iets kruimige aardappelen",
+        "image": "https://static.ah.nl/static/product/AHI_434d50303232323938_2_LowRes_JPG.JPG",
+        "size": "3 kg",
+        "price": 2.65
+      },{
+        "name": "AH Scharrel hele kip",
+        "image": "https://static.ah.nl/static/product/AHI_434d50323033313430_6_LowRes_JPG.JPG",
+        "size": "hele kipje",
+        "price": 8.39
+      },{
+        "name": "AH Verspakket erwtensoep",
+        "image": "https://static.ah.nl/static/product/AHI_434d50303138353236_5_LowRes_JPG.JPG",
+        "size": "1 kg",
+        "price": 1.99
+      }],
+      "keywords": [""],
+      "price": 4.79,
+      "nutrition": {
+        "calories": 123,
+        "fat": 12,
+        "sugar": 12
+      },
+      "time": 35,
+      "difficulty": 0
+    }]
 }
