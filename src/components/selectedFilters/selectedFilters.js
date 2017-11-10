@@ -13,7 +13,7 @@ export default class Wrapper extends Component {
             <div className="filters">
                 {Object.keys(this.props.filters).map((keyName, index) => {
                     return (
-                      <Filter key={index} filterValue={this.props.filters[keyName]} filterName={keyName} />
+                      <Filter key={index} day={this.props.day} changeHandler={this.props.changeFilter} filterValue={this.props.filters[keyName]} filterName={keyName} />
                     )
                 })
               }
