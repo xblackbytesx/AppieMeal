@@ -7,7 +7,7 @@ export const FooterActionsContainer = (props) => (
     <div>
       <footer className="footer">
         <a className="footer__link" href="#">Ga naar favorieten</a>
-        <a className="footer__link" href="#" >
+        <a className="footer__link" onClick={() => props.selectNoMeal(props.day)} >
           Ik wil geen maaltijd
         </a>
       </footer>
