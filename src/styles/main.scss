@@ -69,6 +69,11 @@ $secondary-border-color: $color-ah;
 }
 
 a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
 button:focus {
   outline: none;
 }
@@ -241,6 +246,10 @@ button {
   &--people {
     background-image: url('../img/people.svg');
   }
+
+  &--price {
+    background-image: url('../img/euro.svg');
+  }
 }
 
 
@@ -255,8 +264,29 @@ button {
     margin: 0 5px;
   }
 
-  input {
-    display: none;
+  .filter-controls {
+    padding: $padding-full;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #FFF;
+    width: 100%;
+    height: 30%;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateY(100%);
+    z-index: 1;
+    box-shadow: 2px 3px 3px 1px hsla(300,2%,67%,.22);
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .controls--open {
+    .filter-controls {
+      display: block;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -271,37 +301,41 @@ button {
   padding: 50px 0;
 
   &__link{
-        font-size: 12px;
-        font-weight: normal;
-        margin-right: 20px;
-        background-color: #999;
-        border: none;
-        border-radius: 4px;
-        color: white;
-        padding: 5px 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-
+    font-size: 18px;
+    font-weight: normal;
+    margin-right: 20px;
+    background-color: #999;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
   }
+}
 
+.slider-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .slider {
   width: 100%;
   max-width: 500px;
-  height: 50px;
-  border: 1px solid grey;
+  height: 20px;
+  border: 1px solid $primary-border-color;
+  border-radius: 9px;
 }
 
 .handle {
-  top: 1px;
+  top: -50%;
   width: 50px;
-  height: 48px;
-  line-height: 48px;
+  height: 40px;
   font-size: 0.9em;
   text-align: center;
-  background-color: black;
+  background-color: $color-ah;
+  border-radius: 30%;
   color: white;
   cursor: pointer;
 }
@@ -325,3 +359,4 @@ button {
     opacity: 0.5;
   }
 }
+
