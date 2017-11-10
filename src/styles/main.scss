@@ -225,6 +225,18 @@ button {
   border: 1px solid $primary-border-color;
   border-radius: 20px;
   padding: $padding-half;
+  padding-left: $padding-double;
+  color: #CCC;
+  background: transparent url('../img/people.svg') $padding-half center no-repeat;
+
+
+  &--time {
+    background-image: url('../img/time.svg');
+  }
+
+  &--people {
+    background-image: url('../img/people.svg');
+  }
 }
 
 
@@ -249,4 +261,8 @@ button {
 }
 .stack .card:nth-child(2) {
   transform: translate(-4px, -2px) rotate(-1deg);
+}
+
+footer {
+  padding: $padding-double 0;
 }
