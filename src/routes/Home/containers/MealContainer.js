@@ -8,6 +8,7 @@ import Meals from '../../../components/meals/meals'
 const mapStateToProps = (state, ownProps) => {
   const selectedFilters = state.selectedFilters[ownProps.day]
   const dislikedMeals = state.dislikedMeals
+  const selectedMeals = state.selectedMeals
 
   const meals = state.meals
     .filter((meal) => {
@@ -16,6 +17,9 @@ const mapStateToProps = (state, ownProps) => {
     })
     .filter((meal) => {
       return !(dislikedMeals.indexOf(meal) > -1)
+    })
+    .filter((meal) => {
+      return !(Object.values(selectedMeals).indexOf(meal) > -1)
     })
   console.log(meals)
   return { 
