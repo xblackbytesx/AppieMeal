@@ -1,5 +1,19 @@
-.duck {
-  display: block;
-  width: 120px;
-  margin: 1.5rem auto;
+.card {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+
+  img {
+    display: block;
+    width: 100%;
+    pointer-events: none
+  }
+}
+
+
+.stack .card:nth-child(3) {
+  transform: translate(2px, 2px) rotate(0.4deg);
+}
+.stack .card:nth-child(2) {
+  transform: translate(-4px, -2px) rotate(-1deg);
 }
