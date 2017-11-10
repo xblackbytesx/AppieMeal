@@ -49,7 +49,40 @@
       "sugar": 12
     },
     "time": 5,
-    "difficulty": "beginner"
+    "difficulty": "1"
+  }, {
+    "name": "Knorr Wereldgerecht Borrito",
+    "image": "Knorr-wereldgerecht-image@2x.png",
+    "ingredients": [{
+      "name": "Knorr Wereldgerecht Borrito",
+      "image": "https://www.ah.nl/producten/product/wi221765/knorr-wereldgerechten-burritos",
+      "size": "223 g",
+      "price": 2.59
+    },{
+      "name": "AH Scharrel kipfilet",
+      "image": "https://www.ah.nl/producten/product/wi165533/ah-scharrel-kipfilet",
+      "size": "380 g",
+      "price": 4.30
+    },{
+      "name": "AH Paprika mix",
+      "image": "https://static.ah.nl/static/product/AHI_434d50363730373030_1_LowRes_JPG.JPG",
+      "size": "3 stuks",
+      "price": 1.35
+    },{
+      "name": "AH Crème fraîche light",
+      "image": "https://www.ah.nl/producten/product/wi67781/ah-creme-fraiche-light",
+      "size": "125 g",
+      "price": 0.73
+    }],
+    "keywords": ["makkelijk"],
+    "price": 3.49,
+    "nutrition": {
+      "calories": 123,
+      "fat": 12,
+      "sugar": 12
+    },
+    "time": 5,
+    "difficulty": "0"
   }, {
     "name": "Meergranenpannenkoeken met groenten",
     "image": "img_073325_1600x560_JPG.jpg",
