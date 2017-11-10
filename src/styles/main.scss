@@ -267,6 +267,26 @@ button {
   transform: translate(-4px, -2px) rotate(-1deg);
 }
 
-footer {
+.footer {
   padding: $padding-double 0;
+
+  &__link{
+        font-size: 18px;
+        font-weight: lighter;
+        margin-right: 20px;
+        margin-top: 20px;
+        background-color: #3b9fe2;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        -webkit-box-shadow: 2px 3px 3px 1px rgba(173,170,173,0.22);
+          -moz-box-shadow: 2px 3px 3px 1px rgba(173,170,173,0.22);
+          box-shadow: 2px 3px 3px 1px rgba(173,170,173,0.22);
+
+  }
+
 }
