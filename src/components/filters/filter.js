@@ -27,7 +27,52 @@ export default class Filter extends Component {
         </button>
 
         <div className="filter-controls">
-          {this.props.filterName === 'people' && <ReactSlider defaultValue={this.props.filterValue} min={1} max={6} onChange={(e) => this.props.changeHandler(this.props.day, this.props.filterName, e)} />}
+          {this.props.filterName === 'price' &&
+
+          <div className="price">
+            <h2>Wat is je budget?</h2>
+
+            <div className="current-value-wrapper">
+                <span className="current-value">
+                  { this.props.filterValue }
+                </span>
+
+              <span className="value-unit">
+                  Euro
+                </span>
+            </div>
+
+            <div className="slider-wrapper">
+              <ReactSlider defaultValue={this.props.filterValue} min={5} max={50} onChange={(e) => this.props.changeHandler(this.props.day, this.props.filterName, e)} />
+            </div>
+
+            <a onClick={()=> this.toggleState()} >OK</a>
+          </div>
+          }
+
+
+          {this.props.filterName === 'people' &&
+
+          <div className="people">
+            <h2>Hoeveel personen eten mee?</h2>
+
+            <div className="current-value-wrapper">
+                <span className="current-value">
+                  { this.props.filterValue }
+                </span>
+
+              <span className="value-unit">
+                  Personen
+                </span>
+            </div>
+
+            <div className="slider-wrapper">
+              <ReactSlider defaultValue={this.props.filterValue} min={1} max={6} onChange={(e) => this.props.changeHandler(this.props.day, this.props.filterName, e)} />
+            </div>
+
+            <a onClick={()=> this.toggleState()} >OK</a>
+          </div>
+          }
 
           {this.props.filterName === 'time' &&
             <div className="time">
@@ -44,7 +89,7 @@ export default class Filter extends Component {
               </div>
 
               <div className="slider-wrapper">
-                <ReactSlider defaultValue={this.props.filterValue} min={10} max={100} onChange={(e) => this.props.changeHandler(this.props.day, this.props.filterName, e)} />
+                <ReactSlider defaultValue={this.props.filterValue} min={5} max={100} onChange={(e) => this.props.changeHandler(this.props.day, this.props.filterName, e)} />
               </div>
 
               <a onClick={()=> this.toggleState()} >OK</a>

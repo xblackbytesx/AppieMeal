@@ -1,0 +1,13 @@
+$font-path: '/';
+$global-font-file-formats: ttf, woff, woff2, eot;
+$rails-asset-pipeline: false;
+
+$hamburgFonts: (
+    hamburg-ah-bold: ("#{$font-path}fonts/hamburg-ah-bold", bold, normal),
+    hamburg-ah-medium: ("#{$font-path}fonts/hamburg-ah-medium", normal, normal),
+    hamburg-ah-regular: ("#{$font-path}fonts/hamburg-ah-regular", lighter, normal)
+);
+
+@each $fontVariable, $value in $hamburgFonts {
+    @include font-face(#{$fontVariable}, '#{nth($value, 1)}', nth($value, 2), nth($value, 3));
+}
