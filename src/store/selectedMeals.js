@@ -1,5 +1,6 @@
 
-import days from './../components/day-picker/day-picker'
+import { days } from './../components/day-picker/day-picker'
+import { browserHistory } from 'react-router'
 
 console.log(days)
 // ------------------------------------
@@ -11,7 +12,7 @@ export const SELECT_NO_MEAL = 'SELECT_NO_MEAL'
 // ------------------------------------
 // Actions
 // ------------------------------------
-export function selectMeal (day, meal) {
+export function select (day, meal) {
   return {
     type    : SELECT_MEAL,
     payload : {
@@ -21,13 +22,46 @@ export function selectMeal (day, meal) {
   }
 }
 
-export function selectNoMeal (day) {
+export function selectNo (day) {
   return {
     type    : SELECT_NO_MEAL,
     payload : {
       day,
     }
   }
+}
+
+export function selectMeal(day, meal) {
+  return (dispatch, getState) => {
+    dispatch(select(day, meal));
+    const state = getState();
+    const selectedDays = Object.keys(state.selectedMeals)
+
+    const daysWithoutMeal = days.filter(day => selectedDays.indexOf(day) === -1)
+
+    if (daysWithoutMeal.length) {
+      browserHistory.push('/meal/' + daysWithoutMeal[0])
+    } else {
+      browserHistory.push('/thank-you')
+    }
+
+  };
+}
+
+export function selectNoMeal(day) {
+  return (dispatch, getState) => {
+    dispatch(selectNo(day));
+    const state = getState();
+    const selectedDays = Object.keys(state.selectedMeals)
+
+    const daysWithoutMeal = days.filter(day => selectedDays.indexOf(day) === -1)
+
+    if (daysWithoutMeal.length) {
+      browserHistory.push('/meal/' + daysWithoutMeal[0])
+    } else {
+      browserHistory.push('/thank-you')
+    }
+  };
 }
 
 export const actions = {
