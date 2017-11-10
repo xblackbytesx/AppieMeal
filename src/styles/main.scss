@@ -339,3 +339,15 @@ button {
   color: white;
   cursor: pointer;
 }
+
+.bedankt {
+  padding: 25px 40px;
+  img {
+    max-width: 100%;
+  }
+  h1 {
+    padding: 25px 0;
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+}

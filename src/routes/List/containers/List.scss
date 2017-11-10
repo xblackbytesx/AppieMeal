@@ -1,0 +1,62 @@
+.selected-meals {
+    margin: 0 -8px;
+    ul, li {
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        background: #fbfbfb;
+        border-top: 1px solid #d9d5d0;
+        border-bottom: 1px solid #d9d5d0;
+        padding: 5px 8px;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .product {
+        padding-left: 8px;
+        text-align: left;
+        .image {
+            width: 50px;
+            display: inline-block;
+        }
+        .name {
+            padding-left: 10px;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 1.2;
+            max-width: 140px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: left;
+            position: relative;
+            top: 5px;
+        }
+        
+        .price {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
+
+.bestellen-knop {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #3b9fe2;
+    padding: 10px 30px;
+    border-radius: 50px;
+    z-index: 50;
+    width: 220px;
+    box-shadow: 2px 2px 5px #888888;
+}
