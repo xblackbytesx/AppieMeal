@@ -37,7 +37,7 @@ button:focus {
 
 
 .heading {
-  padding: $padding-double 0 0 0;
+  padding: $padding-double 0 $padding-half 0;
 
   h1 {
     font-size: 20px;
@@ -78,6 +78,7 @@ button {
   padding: 0;
   border: 0;
   outline: 0;
+  cursor: pointer;
 }
 
 
@@ -151,12 +152,28 @@ button {
   width: 90%;
   position: absolute;
 
-  img {
-    display: block;
-    width: 100%;
-    pointer-events: none
+  figure {
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: 100%;
+      pointer-events: none
+    }
+  }
+
+  &__title {
+    height: 60px;
+
+    h1 {
+      font-size: 18px;
+      font-weight: bold;
+    }
   }
 }
+
+
 
 .filters {
   margin-top: 300px;
