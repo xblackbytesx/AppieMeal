@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import { selectMeal } from './../../../store/selectedMeals'
+import { selectMeal, deselectMeal } from './../../../store/selectedMeals'
 import { dislikeMeal } from './../../../store/dislikedMeals'
 
 import Meals from '../../../components/meals/meals'
@@ -34,6 +34,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = {
   selectMeal,
+  deselectMeal,
   dislikeMeal,
 }
 

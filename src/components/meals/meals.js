@@ -21,12 +21,18 @@ export default class Wrapper extends Component {
                     {this.props.selectedMeal && 
                         <div className="heading">
                             {typeof this.props.selectedMeal === 'string' ? 
-                            <div>
+                            <div className="kies-opnieuw" onClick={() => this.props.deselectMeal(this.props.day)}>
                                 <h1>Voor {this.props.day} wordt er geen eten geleverd</h1>
+                                <div>Kies opnieuw <img src="/reload-icon.png" /></div>
                             </div>
                             :
                             <div>
-                                <h1>Op {this.props.day} eten we</h1>
+                                <div className="kies-opnieuw" onClick={() => this.props.deselectMeal(this.props.day)}>
+                                    <h1>
+                                        Op {this.props.day} eten we 
+                                    </h1>
+                                    <div>Kies opnieuw <img src="/reload-icon.png" /></div>
+                                </div>
                                 <article className="card card--selected">
                                     <figure>
                                         <img src={`/${this.props.selectedMeal.image}`} />
