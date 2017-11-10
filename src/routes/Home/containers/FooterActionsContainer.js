@@ -8,7 +8,7 @@ export const FooterActionsContainer = (props) => (
       <footer className="footer">
         {/*{JSON.stringify(props)}*/}
         <a className="footer__link" href="#">Ga naar favorieten</a>
-        <a className="footer__link" onClick={() => props.selectNoMeal(props.day)}>
+        <a className="footer__link" href="#">
           Ik wil geen maaltijd
         </a>
       </footer>
