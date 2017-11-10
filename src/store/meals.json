@@ -186,10 +186,25 @@
     "name": "Masalakip met boontjes",
     "image": "img_004759_1600x560_JPG.jpg",
     "ingredients": [{
-      "name": "",
-      "image": "",
-      "size": "",
-      "price": 1
+      "name": "Patak's Tikka masala paste",
+      "image": "https://static.ah.nl/static/product/AHI_434d50383934343337_1_LowRes_JPG.JPG",
+      "size": "165 g",
+      "price": 1.85
+    },{
+      "name": "AH Kipdrumsticks",
+      "image": "https://static.ah.nl/static/product/AHI_434d50323338303939_3_LowRes_JPG.JPG",
+      "size": "600 g",
+      "price": 2.37
+    },{
+      "name": "AH Fijne sperziebonen",
+      "image": "https://static.ah.nl/static/product/AHI_434d50323331303234_1_LowRes_JPG.JPG",
+      "size": "400 g",
+      "price": 2.99
+    },{
+      "name": "AH Kilo'tje iets kruimige aardappelen",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303935323931_3_LowRes_JPG.JPG",
+      "size": "1 kg",
+      "price": 1.85
     }],
     "keywords": ["makkelijk"],
     "price": 4.99,
