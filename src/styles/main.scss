@@ -195,6 +195,9 @@ button {
 
 .card {
   width: 100%;
+  -webkit-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.11);
+  -moz-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.11);
+  box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.11);
 
   figure {
     height: 200px;
