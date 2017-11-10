@@ -6,7 +6,7 @@ export const Favourites = (props) => (
         {props.meals.map((meal, i) => {
             return(
                  <div>
-                     <article className="card" >
+                     <article className="card">
                          <figure>
                              <img src={`/${meal.image}`} />
                          </figure>
