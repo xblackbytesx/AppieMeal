@@ -15,18 +15,37 @@
       "fat": 12,
       "sugar": 12
     },
-    "time": 10,
+    "time": 15,
     "difficulty": "medium"
   }, {
     "name": "AH Hollandse stamppot",
+    "image": "AHI_434d50363633313432_1_LowRes_JPG.JPG",
     "ingredients": [{
       "name": "",
       "image": "",
       "size": "",
       "price": 1
     }],
-    "keywords": ["vegetarisch"],
-    "price": 1,
+    "keywords": ["kant en klaar"],
+    "price": 3.49,
+    "nutrition": {
+      "calories": 123,
+      "fat": 12,
+      "sugar": 12
+    },
+    "time": 5,
+    "difficulty": "beginner"
+  }, {
+    "name": "Meergranenpannenkoeken met groenten",
+    "image": "img_073325_1600x560_JPG.jpg",
+    "ingredients": [{
+      "name": "",
+      "image": "",
+      "size": "",
+      "price": 1
+    }],
+    "keywords": ["pannenkoek"],
+    "price": 6.49,
     "nutrition": {
       "calories": 123,
       "fat": 12,
@@ -34,5 +53,41 @@
     },
     "time": 10,
     "difficulty": "beginner"
+  }, {
+    "name": "Chinese roerbak met vegaspekjes en groente",
+    "image": "img_090525_1600x560_JPG.jpg",
+    "ingredients": [{
+      "name": "",
+      "image": "",
+      "size": "",
+      "price": 1
+    }],
+    "keywords": ["roerbak"],
+    "price": 4.79,
+    "nutrition": {
+      "calories": 123,
+      "fat": 12,
+      "sugar": 12
+    },
+    "time": 20,
+    "difficulty": "beginner"
+  }, {
+    "name": "Ovenschotel met herfstgroenten en romige kaassaus",
+    "image": "img_084637_1600x560_JPG.jpg",
+    "ingredients": [{
+      "name": "",
+      "image": "",
+      "size": "",
+      "price": 1
+    }],
+    "keywords": ["ovenschotel"],
+    "price": 4.99,
+    "nutrition": {
+      "calories": 123,
+      "fat": 12,
+      "sugar": 12
+    },
+    "time": 40,
+    "difficulty": "medium"
   }]
 }
