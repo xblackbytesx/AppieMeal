@@ -18,9 +18,6 @@ export default class Wrapper extends Component {
         return (
             <div>
                 <div id="viewport">
-                    {/*
-                        Swing Element
-                    */}
                     {this.props.meals.length && <Swing
                         className="stack"
                         tagName="div"
