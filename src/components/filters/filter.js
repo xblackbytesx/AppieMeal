@@ -27,9 +27,11 @@ export default class Filter extends Component {
           </span>
         </button>
 
-        <input className="pill-button__controls" type="text" onChange={(e) => {
-          this.props.changeFilter(this.props.day, this.props.filterName, e.target.value)
-        }} />
+        <div className="filter-controls">
+          <input className="pill-button__controls" type="text" onChange={(e) => {
+            this.props.changeFilter(this.props.day, this.props.filterName, e.target.value)
+          }} />
+        </div>
       </div>
     )
   }

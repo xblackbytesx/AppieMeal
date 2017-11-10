@@ -255,8 +255,24 @@ button {
     margin: 0 5px;
   }
 
-  input {
-    display: none;
+  .filter-controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #FFF;
+    width: 100%;
+    height: 30%;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateY(100%);
+    z-index: 1;
+    box-shadow: 2px 3px 3px 1px hsla(300,2%,67%,.22);
+  }
+
+  .controls--open {
+    .filter-controls {
+      display: block;
+      transform: translateY(0);
+    }
   }
 }
 
