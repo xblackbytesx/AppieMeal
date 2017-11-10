@@ -73,6 +73,11 @@
       "image": "https://www.ah.nl/producten/product/wi67781/ah-creme-fraiche-light",
       "size": "125 g",
       "price": 0.73
+    },{
+      "name": "AH Goudse belegen rasp",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303030373432_8_LowRes_JPG.JPG",
+      "size": "300 g",
+      "price": 2.99
     }],
     "keywords": ["makkelijk"],
     "price": 3.49,
@@ -87,10 +92,25 @@
     "name": "Meergranenpannenkoeken met groenten",
     "image": "img_073325_1600x560_JPG.jpg",
     "ingredients": [{
-      "name": "",
-      "image": "",
-      "size": "",
-      "price": 1
+      "name": "AH Mix voor pannenkoeken compleet",
+      "image": "https://static.ah.nl/static/product/AHI_434d50313433303831_1_LowRes_JPG.JPG",
+      "size": "400 g",
+      "price": 1.89
+    },{
+      "name": "AH Halfvolle melk",
+      "image": "https://static.ah.nl/static/product/AHI_434d50323438373038_1_LowRes_JPG.JPG",
+      "size": "1.5 l",
+      "price": 1.45
+    },{
+      "name": "AH Vrije uitloopeieren",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303133373139_6_LowRes_JPG.JPG",
+      "size": "6 stuks",
+      "price": 1.59
+    },{
+      "name": "AH Chinese wokgroente taugérode paprika",
+      "image": "https://static.ah.nl/static/product/AHI_434d50303133303036_4_LowRes_JPG.JPG",
+      "size": "400 g",
+      "price": 1.99
     }],
     "keywords": ["pannenkoek"],
     "price": 6.49,
