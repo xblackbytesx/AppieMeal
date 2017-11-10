@@ -2,37 +2,26 @@ import { connect } from 'react-redux'
 import React from 'react'
 
 export const Favourites = (props) => (
-    <div>
+    <div className="content-container">
         {props.meals.map((meal, i) => {
             return(
                  <div>
-                                <article className="card" >
-                                <figure>
-                                <img src={`/${meal.image}`} />
-                                </figure>
-                                <section className="card__title">
-                                   <h1>{meal.name}</h1>
-                                </section>
-                                </article>
-                                <article className="card" >
-                                <figure>
-                                <img src={`/${meal.image}`} />
-                                </figure>
-                                <section className="card__title">
-                                    <h1>{meal.name}</h1>
-                                </section>
-                                </article>
-                                )
-                            })}
-                            }
-                           </div>
+                     <article className="card" >
+                         <figure>
+                             <img src={`/${meal.image}`} />
+                         </figure>
+                         <section className="card__title">
+                            <h1>{meal.name}</h1>
+                         </section>
+                    </article>
+                 </div>
             )
         })}
     </div>
   )
 
 const mapStateToProps = (state) => ({
-  meals: state.meals
+ meals: state.meals
 })
 
 /*  Note: mapStateToProps is where you should use `reselect` to create selectors, ie:
